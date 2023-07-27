@@ -4,10 +4,10 @@
 			"path": ".."
 		},
 		{
-			"path": "../../NodeJs"
+			"path": "../../NSDB_main_modal"
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "NodeJs"
+		"liveServer.settings.multiRootWorkspaceName": "NSDB_main_modal"
 	}
 }

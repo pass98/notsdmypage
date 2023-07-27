@@ -6,20 +6,69 @@
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/3c016f9a45.js" crossorigin="anonymous"></script>
+    <script src="./scripte.js"></script>
 </head>
 <body>
-    <div class = 'container'>
+    <div id = 'page'>
+        <!--  왼쪽 사이드바 만들기 -->
         <header class="slidebar">
-            <div id="logo">NSD</div>
+            <!-- 사이드바 로고 -->
             <div class = 'menu'>
                 <div class="slideme"><p>개인정보</p></div>
                 <div class="slideme"><p>구독하기</p></div>
                 <div class="slideme"><p>AI챗봇</p></div>
                 <div class="slideme"><p>개인정보</p></div> 
             </div>
-        </header>
-        <h1>mY page</h1>
+        </header>  
+        <!-- 왼쪽 사이드바 종료 -->
         <main>
+            <!-- 상단 모달바 생성 -->
+            <div id="container">
+                <div id="modalWrap">
+                    <div id="modalContent">
+                        <div id="modalBody">
+                            <!-- 닫기 버튼 -->
+                            <span id="closeBtn">&times;</span> 
+                            <!-- 팝업창 내 글귀 -->
+                            <p>modal-popup 입니다.</p> 
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <nav id="navbar">
+                        <div class="navLeft">
+                            <div class="hamburger">
+                                <button>바</button>
+                            </div>
+                            <div class="nav_logo">
+                                <a href="#">NDB</a>
+                            </div>
+                        </div>
+                        <div class="navRight">
+                            <ul class="popularSerch">
+                                <li>
+                                    <span>인기 검색어</span>
+                                </li>
+                                <li></li>
+                                <li>
+                                    <a href="#">파이썬 반복문</a>
+                                </li>
+                            </ul>
+                            <div id="btnWrap">
+                                <!-- 팝업을 띄우기 위한 버튼 -->
+                                <button type="button" id="modalBtn">로그인</button> 
+                            </div>
+                        </div>
+                    </nav>
+                    <div id="main">
+                    </div>
+                </div>
+                <div>
+        
+                </div>
+            </div>
+            <!-- 상단 모달바 종료 -->
+            <!-- 프로필 카드 창 -->
             <div class = mainBar></div>
             <div class ='card'>
                 <div class="banner">
@@ -29,6 +78,7 @@
                 <h2 class="name">회원이름</h2><div class="id">아이디</div>
             </div>
             <div id="banner">
+                <!-- 선택 메뉴창 -->
             <nav>
                 <span class="bannerMenu">풀었던 문제</span>
                 <span class="bannerMenu">개인 정보</span>
@@ -37,6 +87,7 @@
                 <span class="bannerMenu">계정 연동</span>
             </nav>
             </div>
+            <!-- 메뉴별 대화창  -->
             <div id=txtArea>
                 
             </div>
@@ -45,6 +96,6 @@
     </div>
     
 
-
+</div>
 </body>
 </html>
