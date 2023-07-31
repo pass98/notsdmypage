@@ -94,16 +94,6 @@ nav{
     
 }
 
-#txtArea{
-    width: 600px;
-    height: 50%;
-    background-color: #FFFFFF;
-    border: 5px solid;
-    border-color: #212121;
-    border-radius: 10px;
-    margin-top: 10%;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -233,3 +223,38 @@ a {
 .notosanskr * {
     font-family: 'Noto Sans KR', sans-serif;
 }
+
+
+#tabmenu{
+    margin-top : 10px;
+    width: 500px;
+    margin: 0 auto;
+  }
+  
+  ul.tabs{
+    margin-top: 50px;
+    padding: 0px;
+    list-style: none;
+  }
+  ul.tabs li{
+    background: none;
+    color: #222;
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  ul.tabs li.current{
+    background: #ededed;
+    color: #222;
+  }
+  
+  .tab-content{
+    display: none;
+    background: #ededed;
+    padding: 15px;
+  }
+  
+  .tab-content.current{
+    display: inherit;
+  }

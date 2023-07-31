@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://kit.fontawesome.com/3c016f9a45.js" crossorigin="anonymous"></script>
     <script src="./scripte.js"></script>
 </head>
@@ -28,6 +29,7 @@
                     <div id="modalContent">
                         <div id="modalBody">
                             <!-- 닫기 버튼 -->
+
                             <span id="closeBtn">&times;</span> 
                             <!-- 팝업창 내 글귀 -->
                             <p>modal-popup 입니다.</p> 
@@ -77,20 +79,23 @@
     
                 <h2 class="name">회원이름</h2><div class="id">아이디</div>
             </div>
-            <div id="banner">
-                <!-- 선택 메뉴창 -->
-            <nav>
-                <span class="bannerMenu">풀었던 문제</span>
-                <span class="bannerMenu">개인 정보</span>
-                <span class="bannerMenu">결제 정보</span>
-                <span class="bannerMenu">현재 등급</span>
-                <span class="bannerMenu">계정 연동</span>
-            </nav>
-            </div>
-            <!-- 메뉴별 대화창  -->
-            <div id=txtArea>
-                
-            </div>
+            <div class="tabmenu">
+
+                <ul class="tabs">
+                  <li class="tab-link current" data-tab="tab-1">풀었던 문제</li>
+                  <li class="tab-link" data-tab="tab-2">개인 정보</li>
+                  <li class="tab-link" data-tab="tab-3">결제 정보</li>
+                  <li class="tab-link" data-tab="tab-4">현재 등급</li>
+                  <li class="tab-link" data-tab="tab-5">계정 연동</li>
+                </ul>
+              
+                <div id="tab-1" class="tab-content current">tab content1</div>
+                <div id="tab-2" class="tab-content">tab content2</div>
+                <div id="tab-3" class="tab-content">tab content3</div>
+                <div id="tab-3" class="tab-content">tab content3</div>
+                <div id="tab-3" class="tab-content">tab content3</div>
+              
+              </div>
         </main>
         
     </div>
