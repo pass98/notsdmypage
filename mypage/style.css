@@ -1,18 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 전체 페이지 */
 #page{
     width:1920px;
     display: flex;
     flex-direction: row;
 }
-.container {
-    display: flex;
-    }
 
+    /* 왼쪽 슬라이드바 */
 header{
     align-content: center;
     flex-direction: column;
     width : 10rem;
     background-color: #8CA9BF;
     
+}
+.menu{
+    justify-self:flex-end;
+    flex-direction: column;
+    text-align: center;
 }
  .slidebar {
     display: flex;
@@ -21,15 +30,9 @@ header{
     align-items: center; /* Center horizontally */
      /* Set height to make sure it takes the full height of the header */
 } 
+/* 왼쪽 슬라이드바 종료 */
 
-.menu{
-    justify-self:flex-end;
-    flex-direction: column;
-    text-align: center;
-}
-
-
-
+/* 팝업창 */
 .logo{
     align-self: center;
 }
@@ -48,6 +51,7 @@ main{
     
 }
 
+/* 프로필카드 */
 .card{
     background-color: #fff;
     width : 200px;
@@ -68,6 +72,7 @@ main{
     box-shadow : 0 0.5rem 1rem rgba(0,0,0, 0.3); 
     margin-left: 35px;
 }
+/* 프로필카드 종료 */
 
 i{ margin-left : 5px;
    margin-top : 10px;
@@ -86,18 +91,6 @@ nav{
     vertical-align: middle;
     border-radius: 10px;   
     border: 1px solid;
-}
-
-.bannerMenu{
-    border-collapse: separate;
-    margin: 20px;
-    
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 a {
@@ -224,7 +217,7 @@ a {
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-
+/* 탭메뉴 키 */
 #tabmenu{
     margin-top : 10px;
     width: 500px;
@@ -258,3 +251,14 @@ a {
   .tab-content.current{
     display: inherit;
   }
+
+  .myInfo{
+    width : 100px;
+    padding-left : 50px;
+    text-align: left;
+  }
+  
+  #nameCh{
+    margin-left : 10px;
+  }
+  /* 탭 메뉴 종료 */

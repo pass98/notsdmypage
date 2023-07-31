@@ -70,6 +70,7 @@
                 </div>
             </div>
             <!-- 상단 모달바 종료 -->
+
             <!-- 프로필 카드 창 -->
             <div class = mainBar></div>
             <div class ='card'>
@@ -79,8 +80,10 @@
     
                 <h2 class="name">회원이름</h2><div class="id">아이디</div>
             </div>
+            <!-- 프로필 카드 창 종료 -->
+            
+            <!-- 메인 탭메뉴창 -->
             <div class="tabmenu">
-
                 <ul class="tabs">
                   <li class="tab-link current" data-tab="tab-1">풀었던 문제</li>
                   <li class="tab-link" data-tab="tab-2">개인 정보</li>
@@ -90,14 +93,22 @@
                 </ul>
               
                 <div id="tab-1" class="tab-content current">tab content1</div>
-                <div id="tab-2" class="tab-content">tab content2</div>
+                <div id="tab-2" class="tab-content">
+                    <table  class ='mypagefro'>
+                        <tr><td >이름     </td><td class ='myInfo'><input type="text" readonly="yes" placeholder="이름이 표시될 곳입니다." class="Info" ></td></tr>
+                        <tr><td >비밀번호 </td><td class ='myInfo'><input type="text" readonly="yes" placeholder="비밀번호가 표시될 곳입니다." class="Info"></td></tr>
+                        <tr><td >별명     </td><td class ='myInfo'><input type="text" readonly="yes" placeholder="별명이 표시될 곳입니다." class="Info"></td>
+                        <td><button id="nameCh">변경</button></td></tr>
+                        <tr><td >주소     </td><td class ='myInfo'><input type="text" readonly="yes" placeholder="주소이 표시될 곳입니다." class="Info"></td></tr>
+                        
+                    </table>
+                </div>    
                 <div id="tab-3" class="tab-content">tab content3</div>
-                <div id="tab-3" class="tab-content">tab content3</div>
-                <div id="tab-3" class="tab-content">tab content3</div>
-              
+                <div id="tab-4" class="tab-content">tab content4</div>
+                <div id="tab-5" class="tab-content">tab content5</div>
               </div>
         </main>
-        
+        <!-- 메인 탭메뉴 종료 -->
     </div>
     
 
