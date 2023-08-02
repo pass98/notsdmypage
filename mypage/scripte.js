@@ -31,14 +31,14 @@ $(document).ready(function(){
 
     $(document).ready(function(){
   
-      $('ul.tabs li').click(function(){
+      $('ul.mp_tabs li').click(function(){
         var tab_id = $(this).attr('data-tab');
     
-        $('ul.tabs li').removeClass('current');
-        $('.tab-content').removeClass('current');
+        $('ul.mp_tabs li').removeClass('mp_current');
+        $('.mp_tab-content').removeClass('mp_current');
     
-        $(this).addClass('current');
-        $("#"+tab_id).addClass('current');
-      })
+        $(this).addClass('mp_current');
+        $("#"+tab_id).addClass('mp_current');
+      });
     
-    })
+    });

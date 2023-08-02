@@ -3,39 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* 전체 페이지 */
-#page{
-    width:1920px;
-    display: flex;
-    flex-direction: row;
-}
-
-    /* 왼쪽 슬라이드바 */
-header{
-    align-content: center;
-    flex-direction: column;
-    width : 10rem;
-    background-color: #8CA9BF;
-    
-}
-.menu{
-    justify-self:flex-end;
-    flex-direction: column;
-    text-align: center;
-}
- .slidebar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center vertically */
-    align-items: center; /* Center horizontally */
-     /* Set height to make sure it takes the full height of the header */
-} 
-/* 왼쪽 슬라이드바 종료 */
-
-/* 팝업창 */
-.logo{
-    align-self: center;
-}
+/* 마이 페이지 메인 */
 
 body{
     background-color: #1B3455;
@@ -43,16 +11,19 @@ body{
 }
 
 main{
-    height:1080px;
+    height:100vh;
     display: flex;
     flex-direction: column;
-    margin-left : 15%;
+    /* margin-left : 15%; */
     align-items: center;
     
 }
+/* 마이 페이지 메인 종료 */
+
+
 
 /* 프로필카드 */
-.card{
+.mp_card{
     background-color: #fff;
     width : 200px;
     display: flex;
@@ -64,7 +35,7 @@ main{
 
 }
 
-.profile {
+.mp_profile {
     width:8rem;
     height:8rem;
     background-size:120px;
@@ -74,6 +45,7 @@ main{
 }
 /* 프로필카드 종료 */
 
+/* 모달 팝업창 생성 */
 i{ margin-left : 5px;
    margin-top : 10px;
    align-content: center;}
@@ -105,7 +77,7 @@ a {
     font-family: 'Noto Sans KR','GmarketSansMedium';
 }
 
-#navbar {
+#mp_navbar {
     height: 58px;
     width: 100%;
     padding: 8px 12px;
@@ -216,49 +188,106 @@ a {
 .notosanskr * {
     font-family: 'Noto Sans KR', sans-serif;
 }
+/* 모달 팝업창 종료 */
+
+
+
 
 /* 탭메뉴 키 */
-#tabmenu{
-    margin-top : 10px;
-    width: 500px;
-    margin: 0 auto;
+.mp_tabmenu{
+    width: 50%;
+    margin-top: 50px;
+    background-color: #d2d2d2;
   }
   
-  ul.tabs{
-    margin-top: 50px;
+  ul.mp_tabs{
+    height: 50px;
     padding: 0px;
     list-style: none;
   }
-  ul.tabs li{
+  ul.mp_tabs li{
     background: none;
     color: #222;
     display: inline-block;
-    padding: 10px 15px;
+    padding: 15px 15px;
     cursor: pointer;
   }
   
-  ul.tabs li.current{
+  ul.mp_tabs li.mp_current{
     background: #ededed;
     color: #222;
   }
   
-  .tab-content{
+  .mp_tab-content{
     display: none;
     background: #ededed;
     padding: 15px;
   }
   
-  .tab-content.current{
+  .mp_tab-content.mp_current{
     display: inherit;
   }
 
-  .myInfo{
-    width : 100px;
-    padding-left : 50px;
+  .mp_Info{
+    width : 300px;
+
     text-align: left;
   }
   
-  #nameCh{
+  #mp_nameCh{
     margin-left : 10px;
   }
   /* 탭 메뉴 종료 */
+
+
+
+/* 계정연동 버튼 */
+
+.mp_auth-butoon{
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    width: 50px;  /* 버튼 너비 조절 */
+    height: 50px;  /* 버튼 높이 조절 */
+}
+
+.mp_emoticon{
+    width: 50px;  /* 버튼 너비 조절 */
+    height: auto;
+}
+.auth-btn:hover {
+    color: white;
+}
+
+.google:hover {
+    background-color: #DB4437;
+    border-color: #DB4437;
+}
+
+.github:hover {
+    background-color: #333;
+    border-color: #333;
+}
+
+.kakao:hover {
+    background-color: #FEE500;
+    border-color: #FEE500;
+}
+.microsoft:hover {
+    background-color: #FEE500;
+    border-color: #FEE500;
+}
+.facebook:hover {
+    background-color: #FEE500;
+    border-color: #FEE500;
+}
+.naver:hover {
+    background-color: #FEE500;
+    border-color: #FEE500;
+}
+.apple:hover {
+    background-color: #FEE500;
+    border-color: #FEE500;
+}
+
+/* 계정연동 버튼 종료 */

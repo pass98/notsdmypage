@@ -10,18 +10,7 @@
     <script src="./scripte.js"></script>
 </head>
 <body>
-    <div id = 'page'>
-        <!--  왼쪽 사이드바 만들기 -->
-        <header class="slidebar">
-            <!-- 사이드바 로고 -->
-            <div class = 'menu'>
-                <div class="slideme"><p>개인정보</p></div>
-                <div class="slideme"><p>구독하기</p></div>
-                <div class="slideme"><p>AI챗봇</p></div>
-                <div class="slideme"><p>개인정보</p></div> 
-            </div>
-        </header>  
-        <!-- 왼쪽 사이드바 종료 -->
+    <div id ='mp_page'>
         <main>
             <!-- 상단 모달바 생성 -->
             <div id="container">
@@ -30,7 +19,7 @@
                         <div id="modalBody">
                             <!-- 닫기 버튼 -->
 
-                            <span id="closeBtn">&times;</span> 
+                            <span id="closeBotton">&times;</span> 
                             <!-- 팝업창 내 글귀 -->
                             <p>modal-popup 입니다.</p> 
                         </div>
@@ -56,7 +45,7 @@
                                     <a href="#">파이썬 반복문</a>
                                 </li>
                             </ul>
-                            <div id="btnWrap">
+                            <div id="botoonWrap">
                                 <!-- 팝업을 띄우기 위한 버튼 -->
                                 <button type="button" id="modalBtn">로그인</button> 
                             </div>
@@ -72,40 +61,46 @@
             <!-- 상단 모달바 종료 -->
 
             <!-- 프로필 카드 창 -->
-            <div class = mainBar></div>
-            <div class ='card'>
-                <div class="banner">
+            <div class = 'mp_mainBar'></div>
+            <div class ='mp_card'>
+                <div class="mp_banner">
                     <div class="profile"><i class="fa-solid fa-user fa-6x"></i></div>
                 </div>
     
-                <h2 class="name">회원이름</h2><div class="id">아이디</div>
+                <h2 class="mp_name">회원이름</h2><div class="mp_id">아이디</div>
             </div>
             <!-- 프로필 카드 창 종료 -->
-            
+            <div id = mp_spacedivision></div>
             <!-- 메인 탭메뉴창 -->
-            <div class="tabmenu">
-                <ul class="tabs">
-                  <li class="tab-link current" data-tab="tab-1">풀었던 문제</li>
-                  <li class="tab-link" data-tab="tab-2">개인 정보</li>
-                  <li class="tab-link" data-tab="tab-3">결제 정보</li>
-                  <li class="tab-link" data-tab="tab-4">현재 등급</li>
-                  <li class="tab-link" data-tab="tab-5">계정 연동</li>
+            <div class="mp_tabmenu">
+                <ul class="mp_tabs">
+                  <li class="mp_tab-link current" data-tab="mp_tab-1">풀었던 문제</li>
+                  <li class="mp_tab-link" data-tab="mp_tab-2">개인 정보</li>
+                  <li class="mp_tab-link" data-tab="mp_tab-3">결제 정보</li>
+                  <li class="mp_tab-link" data-tab="mp_tab-4">현재 등급</li>
+                  <li class="mp_tab-link" data-tab="mp_tab-5">계정 연동</li>
                 </ul>
               
-                <div id="tab-1" class="tab-content current">tab content1</div>
-                <div id="tab-2" class="tab-content">
+                <div id="mp_tab-1" class="mp_tab-content current">tab content1</div>
+                <div id="mp_tab-2" class="mp_tab-content">
                     <table  class ='mypagefro'>
-                        <tr><td >이름     </td><td class ='myInfo'><input type="text" readonly="yes" placeholder="이름이 표시될 곳입니다." class="Info" ></td></tr>
-                        <tr><td >비밀번호 </td><td class ='myInfo'><input type="text" readonly="yes" placeholder="비밀번호가 표시될 곳입니다." class="Info"></td></tr>
-                        <tr><td >별명     </td><td class ='myInfo'><input type="text" readonly="yes" placeholder="별명이 표시될 곳입니다." class="Info"></td>
-                        <td><button id="nameCh">변경</button></td></tr>
-                        <tr><td >주소     </td><td class ='myInfo'><input type="text" readonly="yes" placeholder="주소이 표시될 곳입니다." class="Info"></td></tr>
-                        
+                        <tr><td >이름     </td><td class ='mp_myInfo'><input type="text" readonly="yes" placeholder="이름이 표시될 곳입니다." class="mp_Info" ></td></tr>
+                        <tr><td >비밀번호 </td><td class ='mp_myInfo'><input type="text" readonly="yes" placeholder="비밀번호가 표시될 곳입니다." class="mp_Info"></td></tr>
+                        <tr><td >별명     </td><td class ='mp_myInfo'><input type="text" readonly="yes" placeholder="별명이 표시될 곳입니다." class="mp_Info"></td>
+                        <td><button id="mp_nameCh">변경</button></td></tr>
+                        <tr><td >주소     </td><td class ='mp_myInfo'><input type="text" readonly="yes" placeholder="주소이 표시될 곳입니다." class="mp_Info"></td></tr>
                     </table>
                 </div>    
-                <div id="tab-3" class="tab-content">tab content3</div>
-                <div id="tab-4" class="tab-content">tab content4</div>
-                <div id="tab-5" class="tab-content">tab content5</div>
+                <div id="mp_tab-3" class="mp_tab-content">tab content3</div>
+                <div id="mp_tab-4" class="mp_tab-content">tab content4</div>
+                <div id="mp_tab-5" class="mp_tab-content">
+                    <button class="mp_auth-butoon google" onclick="location.href='/auth/google'"><img src="../img/google.png" alt="" class = mp_emoticon></button>
+                    <button class="mp_auth-butoon github" onclick="location.href='/auth/github'"><img src="../img/github.png" alt=""class = mp_emoticon></button>
+                    <button class="mp_auth-butoon kakao" onclick="location.href='/auth/kakao'"><img src="../img/kakao-talk.png" alt=""class = mp_emoticon></button>
+                    <button class="mp_auth-butoon microsoft" onclick="location.href='/auth/microsoft'"><img src="../img/microsoft.png" alt=""class = mp_emoticon></button>
+                    <button class="mp_auth-butoon facebook" onclick="location.href='/auth/facebook'"><img src="../img/facebook.png" alt=""class = mp_emoticon></button>
+                    <button class="mp_auth-butoon naver" onclick="location.href='/auth/naver'"><img src="../img/naver.png" alt=""class = mp_emoticon></button>
+                    <button class="mp_auth-butoon apple" onclick="location.href='/auth/apple'"><img src="../img/apple.png" alt=""class = mp_emoticon></button>
               </div>
         </main>
         <!-- 메인 탭메뉴 종료 -->
