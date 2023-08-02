@@ -5,12 +5,18 @@
 }
 /* 마이 페이지 메인 */
 
+#mp_page{
+    display: flex;
+}
+
+
 body{
     background-color: #1B3455;
     margin: 0;
 }
 
 main{
+    width : 100%;
     height:100vh;
     display: flex;
     flex-direction: column;
@@ -54,16 +60,16 @@ i{ margin-left : 5px;
 
 
 nav{
-    margin-top: 20px;
     color : white ;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     list-style: none;
     background-color: #212121;
     vertical-align: middle;
     border-radius: 10px;   
     border: 1px solid;
+    height: 10vh;
 }
 
 a {
@@ -73,6 +79,7 @@ a {
 
 #container {
     margin: 0;
+    
     width: 100%;
     background-color: #1B3455;
     font-family: 'Noto Sans KR','GmarketSansMedium';
@@ -114,6 +121,21 @@ a {
     background-color: rgba(0, 0, 0, 0.4);
     /* Black w/ opacity */
 }
+#modalBtn{
+    background-color:  transparent;
+    color:white;
+    border : 2px solid white;
+    border-radius: 2em;
+    cursor :pointer;
+    padding : 0.4em 0.8em;
+    font-size: 1rem;
+    font-weight: 700;
+}
+#modalBtn:hover{
+    background-color: #fff;
+    color : #212121;
+    outline:0;
+}
 
 /* 모달 팝업창 */
 #modalBody {
@@ -124,6 +146,7 @@ a {
     border: 1px solid #777;
     background-color: #fff;
     border-radius: 15px;
+    
 }
 
 /* 닫기 버튼 */
@@ -190,6 +213,87 @@ a {
     font-family: 'Noto Sans KR', sans-serif;
 }
 /* 모달 팝업창 종료 */
+
+
+body,
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.left-side-bar > ul ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #dfdfdf;
+}
+
+body {
+    height: 10000px;
+}
+
+.left-side-bar {
+    background-color: #dfdfdf;
+    height: 100%;
+    width: 180px;
+    position: fixed;
+    left: -155px;
+    transition: left .3s;
+}
+
+.left-side-bar > .status-ico {
+    text-align: right;
+    padding: 10px;
+}
+
+.left-side-bar > ul li {
+    position: relative;
+}
+
+.left-side-bar ul {
+    font-weight: bold;
+    text-align: center;
+    padding: 0;
+}
+
+.left-side-bar ul > li > a {
+    display: block;
+    padding: 10px;
+    white-space: nowrap;
+}
+
+.left-side-bar:hover {
+    left: 0;
+}
+
+.left-side-bar ul > li:hover ul {
+    display: block;
+}
+
+.left-side-bar ul > li:hover > a {
+    color: white;
+    background-color: black;
+}
+
+.left-side-bar > .status-ico > span:last-child {
+    display: none;
+}
+
+.left-side-bar:hover > .status-ico > span:last-child {
+    display: block;
+}
+
+.left-side-bar:hover > .status-ico > span:first-child {
+    display: none;
+}
 
 
 /* 탭메뉴 키 */
@@ -267,6 +371,7 @@ a {
 }
 
 .github:hover {
+    box-shadow: #212121;
     background-color: #333;
     border-color: #333;
 }
@@ -276,12 +381,16 @@ a {
     border-color: #FEE500;
 }
 .microsoft:hover {
-    background-color: #FEE500;
-    border-color: #FEE500;
+    background-color: #AF0DE8;
+    border : 2px solid;
+    border-right : 4px solid;
+    border-bottom : 4px solid;
+    border-color: #AF0DE8;
+    
 }
 .facebook:hover {
-    background-color: #FEE500;
-    border-color: #FEE500;
+    background-color: #030891;
+    border-color: #030891;
 }
 .naver:hover {
     background-color: #FEE500;

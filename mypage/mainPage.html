@@ -11,7 +11,51 @@
 </head>
 <body>
     <div id ='mp_page'>
-        <main>
+        <div class="left-side-bar">
+            <div class="status-ico">
+                <span>☰</span>
+                <span>☰</span>
+            </div>
+    
+            <ul>
+                <li>
+                    <a href="#">1</a>
+                    <ul>
+                        <li><a href="#">1</a></li>
+                   
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">2</a>
+                    <ul>
+                        <li><a href="#">1</a></li>
+                     
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">3</a>
+                    <ul>
+                        <li><a href="#">1</a></li>
+                     
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">4</a>
+                    <ul>
+                        <li><a href="#">1</a></li>
+                     
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">5</a>
+                    <ul>
+                        <li><a href="#">1</a></li>
+                    
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <main >
             <!-- 상단 모달바 생성 -->
             <div id="container">
                 <div id="modalWrap">
@@ -57,7 +101,9 @@
                 <div>
         
                 </div>
-            </div>
+            </div> 
+
+            
             <!-- 상단 모달바 종료 -->
             <div id = mp_spacedivision></div>
             <!-- 프로필 카드 창 -->
@@ -92,7 +138,7 @@
                 </div>    
                 <div id="mp_tab-3" class="mp_tab-content">tab content3</div>
                 <div id="mp_tab-4" class="mp_tab-content">tab content4</div>
-                <div id="mp_tab-5" class="mp_tab-content">
+                <div id="mp_tab-5" class="mp_tab-content"><p>계정 연동을 원하시면 아래의 버튼을 눌러주세요.</p>
                     <button class="mp_auth-butoon google" onclick="location.href='/auth/google'"><img src="../img/google.png" alt="" class = mp_emoticon></button>
                     <button class="mp_auth-butoon github" onclick="location.href='/auth/github'"><img src="../img/github.png" alt=""class = mp_emoticon></button>
                     <button class="mp_auth-butoon kakao" onclick="location.href='/auth/kakao'"><img src="../img/kakao-talk.png" alt=""class = mp_emoticon></button>
