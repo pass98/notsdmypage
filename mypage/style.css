@@ -20,7 +20,9 @@ main{
 }
 /* 마이 페이지 메인 종료 */
 
-
+#mp_spacedivision{
+    height : 10vh;
+}
 
 /* 프로필카드 */
 .mp_card{
@@ -32,7 +34,6 @@ main{
     border-radius: 2rem;
     text-align: center;
     margin-top : 20px;
-
 }
 
 .mp_profile {
@@ -191,8 +192,6 @@ a {
 /* 모달 팝업창 종료 */
 
 
-
-
 /* 탭메뉴 키 */
 .mp_tabmenu{
     width: 50%;
@@ -201,11 +200,13 @@ a {
   }
   
   ul.mp_tabs{
+    
     height: 50px;
     padding: 0px;
     list-style: none;
   }
   ul.mp_tabs li{
+   
     background: none;
     color: #222;
     display: inline-block;
@@ -214,6 +215,7 @@ a {
   }
   
   ul.mp_tabs li.mp_current{
+    
     background: #ededed;
     color: #222;
   }
