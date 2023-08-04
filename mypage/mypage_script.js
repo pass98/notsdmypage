@@ -42,3 +42,11 @@ $(document).ready(function(){
       });
     
     });
+
+    window.onload = () => {
+      // '변경' 버튼에 클릭 이벤트 리스너를 추가합니다.
+      document.getElementById("mp_nameCh").addEventListener("click", () => {
+          // '변경되었습니다!'라는 알림을 표시합니다.
+          alert("변경되었습니다!");
+      });
+  }
