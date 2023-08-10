@@ -183,7 +183,7 @@
                                 <a>
                                     <li>닉네임</li>
                                 </a>
-                                <a>
+                                <a herf="http://localhost:3003/mypage" id="mypage-link">
                                     <li>회원정보</li>
                                 </a>
                                 <a>
@@ -418,9 +418,7 @@
                                 <a href="http://localhost:3003/index" id="subscribe-link"><button>구독하기</button></a>
                             </div>
                         </div>
-
-
-
+                       
 
 
 
@@ -577,6 +575,11 @@
                         event.preventDefault(); // 링크의 기본 동작 중단
                         alert("구독이 완료되었습니다! Basic 회원이 되신 걸 축하드립니다!"); // 알림창 표시
                         window.location.href = "http://localhost:3003/index"; // 주소로 이동
+                    });
+
+                    document.getElementById("mypage-link").addEventListener("click", function (event) {
+                        event.preventDefault(); // 링크의 기본 동작 중단
+                        window.location.href = "http://localhost:3003/mypage"; // 주소로 이동
                     });
                 </script>
             </div>
