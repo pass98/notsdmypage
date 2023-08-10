@@ -207,6 +207,22 @@ a {
     background-color: rgba(0, 0, 0, 0.4);
     /* Black w/ opacity */
 }
+#modalBtn{
+    background-color:  transparent;
+    color:white;
+    border : 2px solid white;
+    border-radius: 2em;
+    cursor :pointer;
+    padding : 0.4em 0.8em;
+    margin-right: 0.6em;
+    font-size: 1rem;
+    font-weight: 700;
+}
+#modalBtn:hover{
+    background-color: #fff;
+    color : #212121;
+    outline:0;
+}
 
 /* 모달 팝업창 */
 #main_modalBody {
@@ -217,6 +233,7 @@ a {
     border: 1px solid #777;
     background-color: #fff;
     border-radius: 15px;
+    
 }
 
 /* 닫기 버튼 */
@@ -270,73 +287,29 @@ a {
     margin-left: 28px;
     font-style: italic
 }
-
 /* 네비게이션 왼쪽 요소 끝 */
 
-/* 네비게이션 검색창 시작 */
-#main_navSearchbar {
-    height: 34px;
-    width: 300px;
-    display: flex;
-    padding-left: 12px;
-    /* 문제 창 애니메이션 CSS */
-    /* 애니메이션(좌->우)를 위한 position */
-    /* transform: translateX(-100%);
-    transition: transform 1s;
-    visibility: hidden; */
-    transition: opacity(0);
-    animation: FadeIn 1s linear infinite;
-    /* Pause the animation */
-    animation-play-state: paused;
-    /* Bind the animation to scroll */
-    animation-delay: calc(var(--scroll) * -1s);
-    /* These last 2 properites clean up overshoot weirdness */
-    animation-iteration-count: 1;
-    animation-fill-mode: both;
-}
-
-@keyframes FadeIn {
-    to {
-        transform: opacity(100);
-    }
-}
-
-#main_navSearchbar>.main_search_button {
-    padding-right: 8px;
-    background-color: transparent;
-}
-
-#main_navSearchbar>input {
-    font-size: 0.8rem;
-    height: 32px;
-}
-
-/* 네비게이션 검색창 끝 */
-
-/* 네비게이션 오른쪽 요소 시작 */
-.main_navRight {
+.navRight {
     height: 100%;
     display: flex;
     align-items: center
 }
 
-.main_navRight>ul {
+.navRight>ul {
     float: left;
     margin: 0;
 }
 
-.main_navRight>ul>li {
+.navRight>ul>li {
     list-style-type: none;
     display: inline-block;
     text-align: center;
 }
-
-.main_navRight>ul>:first-child {
+.navRight>ul>:first-child {
     color: #d2d2d2;
     padding-right: 6px;
 }
-
-.main_navRight>ul>:nth-child(2) {
+.navRight>ul>:nth-child(2) {
     color: #ffffff;
     padding-right: 6px;
 }
@@ -447,7 +420,6 @@ body {
     margin-top : 1rem;
 }  
   ul.mp_tabs{
-    /* height: 50px; */
     padding: 0px;
     list-style: none;
   }
